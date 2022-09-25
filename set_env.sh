@@ -1,0 +1,1 @@
+export DATA_ROOT=/home/xrh1/datasets/
