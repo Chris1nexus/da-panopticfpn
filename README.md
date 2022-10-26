@@ -13,10 +13,10 @@ To this end, the (COCO format)[https://cocodataset.org/#format-results] serves a
 Hence, each dataset has been mapped to a common format following the same data pipeline.
 
 The common steps are as follows:
-1. map each dataset-specific category label id to the common category label set id
-2. map instance and semantic segmentation masks to the COCO-detection format (for instance masks)
-3. instance masks and semantic segmentation masks are mapped to panoptic segmentation masks according to the COCO-panoptic format
-4. COCO-Panoptic masks are mapped to the Panoptic Segmentation format required by the (PanopticFPN model)[https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html#standard-dataset-dicts] (read the note about the panopticfpn architecture at the linked page )
+1. **(dataset-specific labels -> common label set)** map each dataset-specific category label id to the common category label set id
+2. **(common label set -> COCO-detection)** map instance and semantic segmentation masks to the COCO-detection format (for instance masks)
+3. **(COCO-detection -> COCO-panoptic)** instance masks and semantic segmentation masks are mapped to panoptic segmentation masks according to the COCO-panoptic format
+4. **(COCO-panoptic -> Detectron2 panopticFPN)** COCO-Panoptic masks are mapped to the Panoptic Segmentation format required by the (PanopticFPN model)[https://detectron2.readthedocs.io/en/latest/tutorials/datasets.html#standard-dataset-dicts] (read the note about the panopticfpn architecture at the linked page )
 
 
 
