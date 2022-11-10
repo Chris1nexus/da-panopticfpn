@@ -60,4 +60,12 @@ The common steps are as follows:
 
 
 ## Training
+The **training** and **hyper-parameter** optimization can both be carried out from the provided jupyter notebook.
+It provides a simple interface to track experiments that have already been executed as well as new ones designed by changing the list of parameters of the grid-search dictionary.
+
+## Visualization of the metrics and qualitative panoptic predictions
+After training or hyper-parameter optimization has been carried out, all metrics can be visualized by running from the top level folder of this project:
+```bash
+tensorboard --logdir .
+```
 
