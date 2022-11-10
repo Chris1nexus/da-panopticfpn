@@ -5,7 +5,9 @@ A **sim2real panoptic segmentation model** for driving scene understanding.
 To achieve this objective, a panoptic segmentation dataset composed of synthetic and real driving scene images has been developed.
 
 The former has been obtained by means of simulation on the **CARLA simulator**.
-The real world components have been integrated by means of the renowned [**Cityscapes**](https://www.cityscapes-dataset.com/downloads/) and (**BDD100k dataset**)[https://www.bdd100k.com/].
+
+The real world components have been integrated by means of the renowned [**Cityscapes**](https://www.cityscapes-dataset.com/downloads/) and [**BDD100k dataset**](https://www.bdd100k.com/).
+
 To merge the three into a common sim2real dataset, a common subset of labels relevant for driving scene understanding has been determined and utilized
 to re-map the ground-truths of each dataset to a common format.
 
