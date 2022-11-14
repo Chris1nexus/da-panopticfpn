@@ -49,7 +49,20 @@ Download the following bdd10k subsets from the official (BDD100K website)[https:
 Each must be put within the **bdd** folder as described above and unzipped there.
 
 #### COCO Carla
-Download from google cloud bucket. Link soon to be available.
+Download from google cloud bucket with the following command:
+```bash
+gsutil -m cp -r \
+  "gs://sim-carla/categories_stuff_panfpn.json" \
+  "gs://sim-carla/train_annotations" \
+  "gs://sim-carla/train_images" \
+  "gs://sim-carla/train_panoptic" \
+  "gs://sim-carla/train_sem_stuff" \
+  "gs://sim-carla/val_annotations" \
+  "gs://sim-carla/val_images" \
+  "gs://sim-carla/val_panoptic" \
+  "gs://sim-carla/val_sem_stuff" \
+  ${DATA_ROOT}/coco-carla
+```
 Alternatively, generate your own version, by means of the tool that i created to generate this synthetic dataset.
 It is available as an open source project at the following [github repository](https://github.com/Chris1nexus/carlo)
 
