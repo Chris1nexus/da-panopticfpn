@@ -49,7 +49,7 @@ Download the following bdd10k subsets from the official (BDD100K website)[https:
 Each must be put within the **bdd** folder as described above and unzipped there.
 
 #### COCO Carla
-Download from google cloud bucket with the following command:
+Download from google cloud bucket with the following command (note, DATA_ROOT is an environment variable initialized with the execution of set_env.sh, which you have to modify according to your preferred data storage path):
 ```bash
 gsutil -m cp -r \
   "gs://sim-carla/categories_stuff_panfpn.json" \
